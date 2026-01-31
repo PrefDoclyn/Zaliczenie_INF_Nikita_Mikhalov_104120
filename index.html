@@ -3,74 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaliczenie Fallout temat</title>
+    <title>Fallout Landing</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.bundle.js">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <header id="menu">
-        <!-- logo left side -->
-        <div class="nav_logo">Fallout💥</div>
-        <!-- menu right side -->
-        <ul class="nav_links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </header>
 
-    <header class="slideshow">
-        <div class="slideshow-container">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top nav-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#Home">Fallout🔥</a>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="" style="width:100%">
-                <div class="text">Caption Text</div>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Team">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact Us</a></li>
+            </ul>
         </div>
-    </header>
-    
-    <header id="Home">
-        <div class="container">
-            
-        </div>
-    </header>
+    </div>
+</nav>
 
-    <section id="About"></section>
-    <section id="Portfolio"></section>
-    <section id="Blog"></section>
-    <section id="Contact Us"></section>
-   
-    <footer></footer>
+<!-- FULLSCREEN SCROLL SLIDER -->
+<div id="Home" class="scroll-sections">
+
+    <section class="scroll-slide active" style="background-image: url('img/fallout1.jpg');">
+        <div class="slide-content">
+            <h1>Welcome to Fallout</h1>
+            <p>Explore the wasteland</p>
+            <a href="#About" class="slide-btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="scroll-slide" style="background-image: url('img/fallout2.jpg');">
+        <div class="slide-content">
+            <h1>Survive the Apocalypse</h1>
+            <p>Only the strong remain</p>
+            <a href="#Team" class="slide-btn">Meet the Team</a>
+        </div>
+    </section>
+
+    <section class="scroll-slide" style="background-image: url('img/fallout3.jpg');">
+        <div class="slide-content">
+            <h1>Join the Brotherhood</h1>
+            <p>Steel is stronger than fear</p>
+            <a href="#Blog" class="slide-btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="scroll-slide" style="background-image: url('img/fallout4.jpg');">
+        <div class="slide-content">
+            <h1>War Never Changes</h1>
+            <p>The legend continues</p>
+            <a href="#Contact" class="slide-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- INDICATORS -->
+    <div class="scroll-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+    </div>
+
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="About" class="section-features">
+    <div class="container">
+        <h2 class="text-center mb-5">About the Project</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="feature-box" data-info="1">
+                    <h4>BEST</h4>
+                    <p>Research Management</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-box" data-info="2">
+                    <h4>POWER</h4>
+                    <p>Financial Analysis</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="feature-box" data-info="3">
+                    <h4>INCREDIBLE</h4>
+                    <p>Investment Trade</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT MODALS -->
+<div class="feature-modal" id="info-1">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Research Management</h3>
+        <p>Here will be detailed information, images, descriptions...</p>
+    </div>
+</div>
+
+<div class="feature-modal" id="info-2">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Financial Analysis</h3>
+        <p>Here will be detailed information, images, descriptions...</p>
+    </div>
+</div>
+
+<div class="feature-modal" id="info-3">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Investment Trade</h3>
+        <p>Here will be detailed information, images, descriptions...</p>
+    </div>
+</div>
+
+<!-- TEAM SECTION -->
+<section id="Team" class="section-team">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Team</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4 team-member">
+                <a href="#" target="_blank">
+                    <img src="img/team1.jpg" class="team-photo">
+                </a>
+                <h4>Jontray Arnold</h4>
+                <p>Producer</p>
+
+                <div class="team-socials">
+                    <a href="#"><img src="img/instagram.svg"></a>
+                    <a href="#"><img src="img/twitter.svg"></a>
+                    <a href="#"><img src="img/facebook.svg"></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 team-member">
+                <a href="#" target="_blank">
+                    <img src="img/team2.jpg" class="team-photo">
+                </a>
+                <h4>Joana Leite</h4>
+                <p>Manager</p>
+
+                <div class="team-socials">
+                    <a href="#"><img src="img/instagram.svg"></a>
+                    <a href="#"><img src="img/twitter.svg"></a>
+                    <a href="#"><img src="img/facebook.svg"></a>
+                </div>
+            </div>
+
+            <div class="col-md-4 team-member">
+                <a href="#" target="_blank">
+                    <img src="img/team3.jpg" class="team-photo">
+                </a>
+                <h4>Jelena Denisova</h4>
+                <p>Producer</p>
+
+                <div class="team-socials">
+                    <a href="#"><img src="img/instagram.svg"></a>
+                    <a href="#"><img src="img/twitter.svg"></a>
+                    <a href="#"><img src="img/facebook.svg"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+<section id="Blog" class="section-testimonials">
+    <div class="container">
+        <h2 class="text-center mb-5">Testimonials</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6"><div class="testimonial-box">“At tortor dignissim convallis...”<br><strong>Iruka Akuchi</strong></div></div>
+            <div class="col-md-6"><div class="testimonial-box">“Hac habitasse platea dictumst...”<br><strong>Kevin Noboa (Google)</strong></div></div>
+            <div class="col-md-6"><div class="testimonial-box">“Nulla pharetra diam sit amet...”<br><strong>Jana Strassmann (Facebook)</strong></div></div>
+            <div class="col-md-6"><div class="testimonial-box">“Pharetra diam sit amet nisl...”<br><strong>Olivia Eklund (Microsoft)</strong></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="Contact" class="footer">
+    <div class="container">
+        <div class="row">
+
+            <!-- LOGO + CONTACT -->
+            <div class="col-md-4">
+                <h4>Fallout🔥</h4>
+                <p>354 King Street, Melbourne Victoria 5467 Australia</p>
+                <p>(0321) 654-798-021</p>
+                <p>info@mail.com</p>
+            </div>
+
+            <!-- PRODUCT -->
+            <div class="col-md-2">
+                <h5>PRODUCT</h5>
+                <ul class="footer-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- COMPANY -->
+            <div class="col-md-2">
+                <h5>COMPANY</h5>
+                <ul class="footer-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Vacancies</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="col-md-2">
+                <h5>SOCIAL</h5>
+                <ul class="footer-list">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+
+        </div>
+       
+        <!-- SEPARATOR LINE --> 
+        <span class="footer-separator">
+       
+        <!-- RED SOCIAL ICONS (BOTTOM RIGHT) -->
+        <div class="footer-socials">
+           
+            <p class="copyright">© 2026. All Rights Reserved.</p>
+
+            <a href="#" class="social-icon">
+                <!-- YouTube -->
+                <img src="img/youtube.svg" alt="">
+            </a>
+
+            <a href="#" class="social-icon">
+                <!-- Twitter -->
+                <img src="img/twitter.svg" alt="">
+            </a>
+
+            <a href="#" class="social-icon">
+                <!-- Facebook -->
+                <img src="img/facebook.svg" alt="">
+            </a>
+
+            <a href="#" class="social-icon">
+                <!-- Instagram -->
+                <img src="img/instagram.svg" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scroll.js"></script>
+
 </body>
 </html>
