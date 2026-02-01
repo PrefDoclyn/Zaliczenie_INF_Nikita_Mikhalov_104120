@@ -22,7 +22,7 @@ dots.forEach(dot => {
 setInterval(() => {
     let next = (current + 1) % slides.length;
     showSlide(next);
-}, 7000);
+}, 20000);
 
 
 // ABOUT MODALS

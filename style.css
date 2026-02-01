@@ -29,10 +29,12 @@ body {
     z-index: 1000;
 }
 
-.nav-custom .navbar-brand {
-    color: var(--primary);
-    font-weight: 900;
-    font-size: 28px;
+.navbar-brand img{
+    width: 110px;
+    height: 50px;
+    background-color: var(--light);
+    padding: 0px 18px 0px 18px;
+    border-radius: 6px;
 }
 
 .nav-custom .nav-link {
@@ -60,23 +62,30 @@ body {
 .scroll-slide {
     position: absolute;
     inset: 0;
-    background-size: cover;
-    background-position: center;
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    z-index: 1;
 }
+
 
 .scroll-slide.active {
     opacity: 1;
 }
 
+/* PRZYCIEMNIENIE */
 .scroll-slide::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.45);
+    z-index: 1;
 }
 
+/* TEKST */
 .slide-content {
     position: relative;
     z-index: 2;
@@ -85,34 +94,34 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     color: white;
+    padding: 0 20px;
 }
 
 .slide-content h1 {
     font-size: clamp(40px, 6vw, 80px);
     font-weight: 900;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    text-shadow: 0 4px 20px rgba(0,0,0,0.8);
     margin-bottom: 10px;
 }
 
 .slide-content p {
     font-size: 22px;
-    opacity: 0.9;
+    opacity: 0.95;
     margin-bottom: 25px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
 }
-
 .slide-btn {
     display: inline-block;
+    max-width: 200px;
     padding: 12px 28px;
     background: var(--primary);
     color: white;
     border-radius: 10px;
     font-weight: 600;
     transition: 0.3s;
-}
-
-.slide-btn:hover {
-    background: #9b0e18;
+    text-decoration: none;
 }
 
 /* ===========================
@@ -223,7 +232,6 @@ body {
 }
 
 .team-photo {
-    width: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
     transition: 0.3s;
@@ -296,11 +304,13 @@ body {
     position: relative;
 }
 
-.footer h4 {
-    font-size: 28px;
-    font-weight: 900;
-    color: #c1121f;
-    margin-bottom: 20px;
+.footer img {
+    width: 110px;
+    height: 50px;
+    background-color: var(--light);
+    padding: 0px 18px 0px 18px;
+    margin-bottom: 16px;
+    border-radius: 6px;
 }
 
 .footer h5 {
@@ -345,6 +355,15 @@ body {
    FOOTER-SOCIALS
 =========================== */
 .footer-socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon_block{
+    width: 180px;
+    height: auto;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -355,7 +374,6 @@ body {
 =========================== */
 
 .footer-socials {
-    position: absolute;
     right: 40px;
     bottom: 40px;
     display: flex;
