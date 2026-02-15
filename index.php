@@ -32,6 +32,9 @@
                 <li class="nav-item"><a class="nav-link" href="#Contact">Contact Us</a></li>
             </ul>
         </div>
+       
+        <a class="btn btn-primary ms-3 login" href="login.php">Login</a>
+
     </div>
 </nav>
 
@@ -116,7 +119,17 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h3>Research Management</h3>
-        <p>Here will be detailed information, images, descriptions...</p>
+        <p>Advanced tools for analyzing data, tracking progress, and managing complex research workflows.</p>
+
+        <ul>
+            <li>Real‑time data monitoring</li>
+            <li>AI‑powered predictions</li>
+            <li>Team collaboration tools</li>
+            <li>Secure cloud storage</li>
+        </ul>
+
+        <a href="#" class="slide-btn">Learn more</a>
+
     </div>
 </div>
 
@@ -124,7 +137,17 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h3>Financial Analysis</h3>
-        <p>Here will be detailed information, images, descriptions...</p>
+        <p>Powerful analytics engine for evaluating financial performance and forecasting future trends.</p>
+
+        <ul>
+            <li>Interactive charts</li>
+            <li>Risk assessment tools</li>
+            <li>Portfolio optimization</li>
+            <li>Automated reporting</li>
+        </ul>
+
+        <img src="img/chart_example.png" alt="Chart" class="modal-img">
+
     </div>
 </div>
 
@@ -132,7 +155,17 @@
     <div class="modal-content">
         <span class="close">&times;</span>
         <h3>Investment Trade</h3>
-        <p>Here will be detailed information, images, descriptions...</p>
+        <p>Fast and secure trading platform designed for both beginners and professionals.</p>
+
+        <ul>
+            <li>Instant buy/sell operations</li>
+            <li>Real‑time market data</li>
+            <li>Advanced trading indicators</li>
+            <li>Multi‑asset support</li>
+        </ul>
+
+        <a href="#" class="slide-btn">Start trading</a>
+
     </div>
 </div>
 
@@ -192,13 +225,36 @@
 <!-- BLOG -->
 <section id="Blog" class="section-testimonials">
     <div class="container">
-        <h2 class="text-center mb-5">Testimonials</h2>
+        <h2 class="text-center mb-5 fallout-title"><img class="nuclear-radioactive" src="img/nuclear-radioactive.svg" alt="">Vault-Tec Testimonials</h2>
 
         <div class="row g-4">
-            <div class="col-md-6"><div class="testimonial-box">“At tortor dignissim convallis...”<br><strong>Iruka Akuchi</strong></div></div>
-            <div class="col-md-6"><div class="testimonial-box">“Hac habitasse platea dictumst...”<br><strong>Kevin Noboa (Google)</strong></div></div>
-            <div class="col-md-6"><div class="testimonial-box">“Nulla pharetra diam sit amet...”<br><strong>Jana Strassmann (Facebook)</strong></div></div>
-            <div class="col-md-6"><div class="testimonial-box">“Pharetra diam sit amet nisl...”<br><strong>Olivia Eklund (Microsoft)</strong></div></div>
+            <div class="col-md-6">
+                <div class="testimonial-box">
+                    “War. War never changes. But this shelter? Best decision I ever made.”
+                    <br><strong>Vault Dweller #101</strong>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonial-box">
+                    “If it wasn’t for this place, I’d be Radroach food by now.”
+                    <br><strong>Survivor from Megaton</strong>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonial-box">
+                    “Clean water, working lights, no super mutants. 10/10.”
+                    <br><strong>Brotherhood Initiate</strong>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="testimonial-box">
+                    “I’ve seen the wasteland. Trust me — this is luxury.”
+                    <br><strong>NCR Ranger</strong>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -210,7 +266,7 @@
 
             <!-- LOGO + CONTACT -->
             <div class="col-md-4">
-                <img src="img/Logo_Fallout.svg" alt="">
+                <a href="#Home"><img src="img/Logo_Fallout.svg" alt=""></a> 
                 <p>354 King Street, Melbourne Victoria 5467 Australia</p>
                 <p>(0321) 654-798-021</p>
                 <p>info@mail.com</p>
